@@ -15,7 +15,9 @@ PCMA.SerialComm();
 PCMB.SerialComm();
 PCMC.SerialComm();
 PCMD.SerialComm();
-*)]]></ST>
+*)
+
+PCMA.SerialComm();]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

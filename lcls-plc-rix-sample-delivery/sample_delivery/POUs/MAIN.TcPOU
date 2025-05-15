@@ -7,8 +7,8 @@ END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[SolenoidPairA();
-
 fb_4PortViciValve_01(iAdress:=1);
+PCMA();
 
 (* Following execution of all the programs, set the first pass false *)
 g_xFirstPass := FALSE;]]></ST>

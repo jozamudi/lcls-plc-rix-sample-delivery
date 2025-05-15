@@ -2,6 +2,21 @@
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <GVL Name="GVL_SDS" Id="{233c10f9-ad08-42e0-b3b0-42b6b4ca796a}">
     <Declaration><![CDATA[VAR_GLOBAL
+	{attribute 'pytmc' := '
+		pv: CRIX:SDS:PCM:A
+	 '}
+	{attribute 'TcLinkTo' := '.stPropAir1.i_iPressRB 	:= TIIB[PCM A (EP4374-0002)]^AI Inputs Channel 1^Value;
+							  .stPropAir2.i_iPressRB 	:= TIIB[PCM A (EP4374-0002)]^AI Inputs Channel 2^Value;
+							  .stPropAir1.q_iPressCt 	:= TIIB[PCM A (EP4374-0002)]^AO Outputs Channel 3^Analog output;
+							  .stPropAir2.q_iPressCt 	:= TIIB[PCM A (EP4374-0002)]^AO Outputs Channel 4^Analog output;
+							  .stSerial1.stComIn.Status := TIIB[PCM A (EP6002-0002)]^COM TxPDO-Map Inputs Channel 1^Status;
+							  .stSerial2.stComIn.Status := TIIB[PCM A (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Status;
+							  .stSerial1.stComOut.Ctrl 	:= TIIB[PCM A (EP6002-0002)]^COM RxPDO-Map Outputs Channel 1^Ctrl;
+							  .stSerial2.stComOut.Ctrl 	:= TIIB[PCM A (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Ctrl;
+							  .stBaseIO.i_SyncUnitWC 	:= TIIB[PCM A (EP1111)]^WcState^WcState;
+	'}
+	PCMA : FB_PressureControlModule;	
+
     // 4 Port Valve
     {attribute 'pytmc' := 'pv: CRIX:SDS:VICI:01'}
     {attribute 'TcLinkTo' := '.fbNporValve.stViciSerial.stComIn.Status := TIIB[Term 16 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Status;

@@ -16,8 +16,10 @@
 		<Box File="Term 16 (EP6002-0002).xti" Id="16">
 			<EtherCAT PortABoxInfo="#x01000008"/>
 		</Box>
-		<Box File="Term 17 (EP9128-1021).xti" Id="17">
-			<EtherCAT PortABoxInfo="#x02000003"/>
+		<Box BoxType="9099" Id="17">
+			<Name>Term 17 (EP9128-1021)</Name>
+			<ImageId>1000</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x001203fd" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-1021 8x EtherCAT junction - Dev A" Desc="EP9128-1021" PortABoxInfo="#x02000003"/>
 		</Box>
 		<Box BoxType="9099" Id="5">
 			<Name>Term 5 (EP9128-2021)</Name>
