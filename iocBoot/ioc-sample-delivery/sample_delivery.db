@@ -74,6 +74,220 @@ record(longin, "$(PREFIX)LCLSGeneral:LogMessageCount_RBV") {
   field(ASG, "NO_WRITE")
 }
 
+record(bi, "CRIX:SDS:PCM:A:IO:SyncUnitOK_RBV") {
+  field(DESC, "GVL_SDS.PCMA.stBaseIO.i_SyncUnitWC")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.PCMA.stBaseIO.i_SyncUnitWC?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(longin, "CRIX:SDS:PCM:A:PropAir:01:HighLimit_RBV") {
+  field(DESC, "GVL_SDS.PCMA.stPropAir1.iHiLimit")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.PCMA.stPropAir1.iHiLimit?")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(longout, "CRIX:SDS:PCM:A:PropAir:01:HighLimit") {
+  field(DESC, "GVL_SDS.PCMA.stPropAir1.iHiLimit")
+  field(DTYP, "asynInt32")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.PCMA.stPropAir1.iHiLimit=")
+  info(autosaveFields_pass0, "DESC DISS DRVH DRVL HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS VAL")
+  info(archive, "VAL")
+}
+
+record(longin, "CRIX:SDS:PCM:A:PropAir:01:LowLimit_RBV") {
+  field(DESC, "GVL_SDS.PCMA.stPropAir1.iLoLimit")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.PCMA.stPropAir1.iLoLimit?")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(longout, "CRIX:SDS:PCM:A:PropAir:01:LowLimit") {
+  field(DESC, "GVL_SDS.PCMA.stPropAir1.iLoLimit")
+  field(DTYP, "asynInt32")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.PCMA.stPropAir1.iLoLimit=")
+  info(autosaveFields_pass0, "DESC DISS DRVH DRVL HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS VAL")
+  info(archive, "VAL")
+}
+
+record(longin, "CRIX:SDS:PCM:A:PropAir:01:Pressure_RBV") {
+  field(DESC, "GVL_SDS.PCMA.stPropAir1.iPressure")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.PCMA.stPropAir1.iPressure?")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(longin, "CRIX:SDS:PCM:A:PropAir:01:Setpoint_RBV") {
+  field(DESC, "GVL_SDS.PCMA.stPropAir1.iSetpoint")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.PCMA.stPropAir1.iSetpoint?")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(longout, "CRIX:SDS:PCM:A:PropAir:01:Setpoint") {
+  field(DESC, "GVL_SDS.PCMA.stPropAir1.iSetpoint")
+  field(DTYP, "asynInt32")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.PCMA.stPropAir1.iSetpoint=")
+  info(autosaveFields_pass0, "DESC DISS DRVH DRVL HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS VAL")
+  info(archive, "VAL")
+}
+
+record(bi, "CRIX:SDS:PCM:A:PropAir:01:Enable_RBV") {
+  field(DESC, "GVL_SDS.PCMA.stPropAir1.xEnable")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.PCMA.stPropAir1.xEnable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(bo, "CRIX:SDS:PCM:A:PropAir:01:Enable") {
+  field(DESC, "GVL_SDS.PCMA.stPropAir1.xEnable")
+  field(DTYP, "asynInt32")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.PCMA.stPropAir1.xEnable=")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "COSV DESC DISS OSV SIMS UDFS VAL ZSV")
+  info(archive, "VAL")
+}
+
+record(longin, "CRIX:SDS:PCM:A:PropAir:02:HighLimit_RBV") {
+  field(DESC, "GVL_SDS.PCMA.stPropAir2.iHiLimit")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.PCMA.stPropAir2.iHiLimit?")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(longout, "CRIX:SDS:PCM:A:PropAir:02:HighLimit") {
+  field(DESC, "GVL_SDS.PCMA.stPropAir2.iHiLimit")
+  field(DTYP, "asynInt32")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.PCMA.stPropAir2.iHiLimit=")
+  info(autosaveFields_pass0, "DESC DISS DRVH DRVL HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS VAL")
+  info(archive, "VAL")
+}
+
+record(longin, "CRIX:SDS:PCM:A:PropAir:02:LowLimit_RBV") {
+  field(DESC, "GVL_SDS.PCMA.stPropAir2.iLoLimit")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.PCMA.stPropAir2.iLoLimit?")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(longout, "CRIX:SDS:PCM:A:PropAir:02:LowLimit") {
+  field(DESC, "GVL_SDS.PCMA.stPropAir2.iLoLimit")
+  field(DTYP, "asynInt32")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.PCMA.stPropAir2.iLoLimit=")
+  info(autosaveFields_pass0, "DESC DISS DRVH DRVL HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS VAL")
+  info(archive, "VAL")
+}
+
+record(longin, "CRIX:SDS:PCM:A:PropAir:02:Pressure_RBV") {
+  field(DESC, "GVL_SDS.PCMA.stPropAir2.iPressure")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.PCMA.stPropAir2.iPressure?")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(longin, "CRIX:SDS:PCM:A:PropAir:02:Setpoint_RBV") {
+  field(DESC, "GVL_SDS.PCMA.stPropAir2.iSetpoint")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.PCMA.stPropAir2.iSetpoint?")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(longout, "CRIX:SDS:PCM:A:PropAir:02:Setpoint") {
+  field(DESC, "GVL_SDS.PCMA.stPropAir2.iSetpoint")
+  field(DTYP, "asynInt32")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.PCMA.stPropAir2.iSetpoint=")
+  info(autosaveFields_pass0, "DESC DISS DRVH DRVL HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS VAL")
+  info(archive, "VAL")
+}
+
+record(bi, "CRIX:SDS:PCM:A:PropAir:02:Enable_RBV") {
+  field(DESC, "GVL_SDS.PCMA.stPropAir2.xEnable")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.PCMA.stPropAir2.xEnable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(bo, "CRIX:SDS:PCM:A:PropAir:02:Enable") {
+  field(DESC, "GVL_SDS.PCMA.stPropAir2.xEnable")
+  field(DTYP, "asynInt32")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.PCMA.stPropAir2.xEnable=")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "COSV DESC DISS OSV SIMS UDFS VAL ZSV")
+  info(archive, "VAL")
+}
+
 record(bi, "RIX:SDS:SPR:PURGE:A_RBV") {
   field(DESC, "GVL_SDS.PURGE_VRC_01_CTL")
   field(SCAN, "I/O Intr")
@@ -361,151 +575,6 @@ record(waveform, "CRIX:SDS:VICI:01:SampleNames:04") {
   field(DTYP, "asynInt8ArrayOut")
   field(UDFS, "0")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.fb_4PortViciValve_01.stSampleNames.s4=")
-  field(FTVL, "CHAR")
-  field(NELM, "80")
-  field(MPST, "On Change")
-  field(APST, "On Change")
-  info(autosaveFields_pass0, "DESC DISS SIMS UDFS VAL")
-  info(archive, "VAL")
-}
-
-record(longin, "CRIX:SDS:VICI:02:iReqPos_RBV") {
-  field(DESC, "GVL_SDS.fb_4PortViciValve_02.iReqPos")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.fb_4PortViciValve_02.iReqPos?")
-  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
-  info(archive, "VAL")
-  field(ASG, "NO_WRITE")
-}
-
-record(longout, "CRIX:SDS:VICI:02:iReqPos") {
-  field(DESC, "GVL_SDS.fb_4PortViciValve_02.iReqPos")
-  field(DTYP, "asynInt32")
-  field(UDFS, "0")
-  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.fb_4PortViciValve_02.iReqPos=")
-  info(autosaveFields_pass0, "DESC DISS DRVH DRVL HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS VAL")
-  info(archive, "VAL")
-}
-
-record(waveform, "CRIX:SDS:VICI:02:SampleNames:01_RBV") {
-  # GVL_SDS.fb_4PortViciValve_02.stSampleNames.s1
-  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s1")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.fb_4PortViciValve_02.stSampleNames.s1?")
-  field(FTVL, "CHAR")
-  field(NELM, "80")
-  field(MPST, "On Change")
-  field(APST, "On Change")
-  info(autosaveFields_pass0, "DESC DISS SIMS UDFS")
-  info(archive, "VAL")
-  field(ASG, "NO_WRITE")
-}
-
-record(waveform, "CRIX:SDS:VICI:02:SampleNames:01") {
-  # GVL_SDS.fb_4PortViciValve_02.stSampleNames.s1
-  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s1")
-  field(DTYP, "asynInt8ArrayOut")
-  field(UDFS, "0")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.fb_4PortViciValve_02.stSampleNames.s1=")
-  field(FTVL, "CHAR")
-  field(NELM, "80")
-  field(MPST, "On Change")
-  field(APST, "On Change")
-  info(autosaveFields_pass0, "DESC DISS SIMS UDFS VAL")
-  info(archive, "VAL")
-}
-
-record(waveform, "CRIX:SDS:VICI:02:SampleNames:02_RBV") {
-  # GVL_SDS.fb_4PortViciValve_02.stSampleNames.s2
-  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s2")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.fb_4PortViciValve_02.stSampleNames.s2?")
-  field(FTVL, "CHAR")
-  field(NELM, "80")
-  field(MPST, "On Change")
-  field(APST, "On Change")
-  info(autosaveFields_pass0, "DESC DISS SIMS UDFS")
-  info(archive, "VAL")
-  field(ASG, "NO_WRITE")
-}
-
-record(waveform, "CRIX:SDS:VICI:02:SampleNames:02") {
-  # GVL_SDS.fb_4PortViciValve_02.stSampleNames.s2
-  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s2")
-  field(DTYP, "asynInt8ArrayOut")
-  field(UDFS, "0")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.fb_4PortViciValve_02.stSampleNames.s2=")
-  field(FTVL, "CHAR")
-  field(NELM, "80")
-  field(MPST, "On Change")
-  field(APST, "On Change")
-  info(autosaveFields_pass0, "DESC DISS SIMS UDFS VAL")
-  info(archive, "VAL")
-}
-
-record(waveform, "CRIX:SDS:VICI:02:SampleNames:03_RBV") {
-  # GVL_SDS.fb_4PortViciValve_02.stSampleNames.s3
-  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s3")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.fb_4PortViciValve_02.stSampleNames.s3?")
-  field(FTVL, "CHAR")
-  field(NELM, "80")
-  field(MPST, "On Change")
-  field(APST, "On Change")
-  info(autosaveFields_pass0, "DESC DISS SIMS UDFS")
-  info(archive, "VAL")
-  field(ASG, "NO_WRITE")
-}
-
-record(waveform, "CRIX:SDS:VICI:02:SampleNames:03") {
-  # GVL_SDS.fb_4PortViciValve_02.stSampleNames.s3
-  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s3")
-  field(DTYP, "asynInt8ArrayOut")
-  field(UDFS, "0")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.fb_4PortViciValve_02.stSampleNames.s3=")
-  field(FTVL, "CHAR")
-  field(NELM, "80")
-  field(MPST, "On Change")
-  field(APST, "On Change")
-  info(autosaveFields_pass0, "DESC DISS SIMS UDFS VAL")
-  info(archive, "VAL")
-}
-
-record(waveform, "CRIX:SDS:VICI:02:SampleNames:04_RBV") {
-  # GVL_SDS.fb_4PortViciValve_02.stSampleNames.s4
-  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s4")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.fb_4PortViciValve_02.stSampleNames.s4?")
-  field(FTVL, "CHAR")
-  field(NELM, "80")
-  field(MPST, "On Change")
-  field(APST, "On Change")
-  info(autosaveFields_pass0, "DESC DISS SIMS UDFS")
-  info(archive, "VAL")
-  field(ASG, "NO_WRITE")
-}
-
-record(waveform, "CRIX:SDS:VICI:02:SampleNames:04") {
-  # GVL_SDS.fb_4PortViciValve_02.stSampleNames.s4
-  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s4")
-  field(DTYP, "asynInt8ArrayOut")
-  field(UDFS, "0")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.fb_4PortViciValve_02.stSampleNames.s4=")
   field(FTVL, "CHAR")
   field(NELM, "80")
   field(MPST, "On Change")
