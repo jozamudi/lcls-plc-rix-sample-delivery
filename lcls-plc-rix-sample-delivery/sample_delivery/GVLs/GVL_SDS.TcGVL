@@ -72,7 +72,7 @@
 	
 	{attribute 'pytmc' := 'pv: RIX:SDS:VRC:01'}
     {attribute 'TcLinkTo' := 'TIIB[Solenoid Pair A Digital IO (EP2338-0001)]^Channel 14^Output'}
-    SDS_VRC_02_CTL AT%Q* : BOOL;
+    SDS_VRC_01_CTL AT%Q* : BOOL;
 
 
 END_VAR]]></Declaration>
