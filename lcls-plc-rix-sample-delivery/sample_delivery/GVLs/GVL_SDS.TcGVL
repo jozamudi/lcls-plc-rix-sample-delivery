@@ -62,15 +62,24 @@
     SolenoidPairA : FB_SolenoidPair;
 
     // Purge Valves
-    {attribute 'pytmc' := 'pv: RIX:SDS:SPR:PURGE:A'}
+    {attribute 'pytmc' := 'pv: RIX:SDS:SPR:PURGE:A
+		field: ZRST "CLOSE"
+		field: ONST "OPEN"
+	'}
     {attribute 'TcLinkTo' := 'TIIB[Solenoid Pair A Digital IO (EP2338-0001)]^Channel 12^Output'}
     PURGE_VRC_01_CTL AT%Q* : BOOL;
 
-    {attribute 'pytmc' := 'pv: RIX:SDS:SPR:PURGE:B'}
+    {attribute 'pytmc' := 'pv: RIX:SDS:SPR:PURGE:B
+		field: ZRST "CLOSE"
+		field: ONST "OPEN"
+	'}
     {attribute 'TcLinkTo' := 'TIIB[Solenoid Pair A Digital IO (EP2338-0001)]^Channel 13^Output'}
     PURGE_VRC_02_CTL AT%Q* : BOOL;
 	
-	{attribute 'pytmc' := 'pv: RIX:SDS:VRC:01'}
+	{attribute 'pytmc' := 'pv: RIX:SDS:VRC:01
+		field: ZRST "CLOSE"
+		field: ONST "OPEN"
+	'}
     {attribute 'TcLinkTo' := 'TIIB[Solenoid Pair A Digital IO (EP2338-0001)]^Channel 14^Output'}
     SDS_VRC_01_CTL AT%Q* : BOOL;
 
