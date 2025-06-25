@@ -55,7 +55,12 @@
 
     fb_4PortViciValve_01 : FB_4PortViciValve;
 
-    {attribute 'pytmc' := 'pv: RIX:SDS:SPR:A'}
+    {attribute 'pytmc' := 'pv: RIX:SDS:SPR:A
+		q_xDO1.field: ZNAM "CLOSE"
+		q_xDO1.field: ONAM "OPEN"
+		q_xDO2.field: ZNAM "CLOSE"
+		q_xDO2.field: ONAM "OPEN"
+	'}
     {attribute 'TcLinkTo' := '.q_xDO1 := TIIB[Solenoid Pair A Digital IO (EP2338-0001)]^Channel 10^Output;
                           .q_xDO2 := TIIB[Solenoid Pair A Digital IO (EP2338-0001)]^Channel 11^Output;
     '}
