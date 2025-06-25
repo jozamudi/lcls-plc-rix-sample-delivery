@@ -43,9 +43,9 @@
     <Folder Include="POUs" />
   </ItemGroup>
   <ItemGroup>
-    <PlaceholderReference Include="lcls-twincat-sample-delivery">
-      <DefaultResolution>lcls-twincat-sample-delivery, * (SLAC)</DefaultResolution>
-      <Namespace>lcls_twincat_sample_delivery</Namespace>
+    <PlaceholderReference Include="LCLS Sample Delivery">
+      <DefaultResolution>LCLS Sample Delivery, * (SLAC - LCLS)</DefaultResolution>
+      <Namespace>LCLS_Sample_Delivery</Namespace>
     </PlaceholderReference>
     <PlaceholderReference Include="Tc2_Standard">
       <DefaultResolution>Tc2_Standard, * (Beckhoff Automation GmbH)</DefaultResolution>
@@ -61,8 +61,8 @@
     </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>
-    <PlaceholderResolution Include="lcls-twincat-sample-delivery">
-      <Resolution>lcls-twincat-sample-delivery, 1.0.0 (SLAC)</Resolution>
+    <PlaceholderResolution Include="LCLS Sample Delivery">
+      <Resolution>LCLS Sample Delivery, 0.0.0 (SLAC - LCLS)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="Tc2_Standard">
       <Resolution>Tc2_Standard, 3.3.2.0 (Beckhoff Automation GmbH)</Resolution>
